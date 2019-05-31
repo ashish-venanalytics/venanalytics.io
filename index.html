@@ -1,687 +1,408 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Ven Analytics</title>
 
-<head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>VenAnalytics</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-	<!--
-			CSS
-			============================================= -->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/jquery.DonutWidget.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<body>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800">
 
-	<!-- Start Header Area -->
-	<header class="default-header">
-		<nav class="navbar navbar-expand-lg  navbar-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logo-new.png" height="50" width="100" alt="">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140896656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-				<div class="collapse navbar-collapse justify-content-end align-items-center"
-					id="navbarSupportedContent">
-					<ul class="navbar-nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#vision">Vision</a></li>
-						<li><a href="#products">Products</a></li>
-						<li><a href="#team">team</a></li>
-						<!-- <li><a href="#blog">blog</a></li> -->
-						<!-- Dropdown -->
-						<!-- <li class="dropdown">
-							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-								Pages
-							</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="generic.html">Generic</a>
-								<a class="dropdown-item" href="elements.html">Elements</a>
-							</div>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- End Header Area -->
+      gtag('config', 'UA-140896656-1');
+    </script>
+  </head>
 
-	<!-- start banner Area -->
-	<section class="banner-area relative" id="home">
-		<div class="overlay-bg overlay"></div>
-		<div class="container">
-			<div class="row fullscreen d-flex align-items-center justify-content-center">
-				<div class="banner-content col-lg-6 col-md-12">
-					<h1 class="text-uppercase">
-						Helping organizations leverage the power of Data
-					</h1>
-					<p class="pb-20 text-white">
-					</p>
-					<!-- <a href="#" class="primary-btn2 header-btn text-uppercase">Get a Quote</a> -->
-				</div>
-				<div class="col-lg-6">
-					<img class="img-fluid" src="img/header-img.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End banner Area -->
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container navbar-content">
+          <a class="navbar-brand" href="/"><img src="images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+          <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="flaticon-menu"></i>
+          </button>
 
-	<!-- Start about Area -->
-	<section class="about-area section-gap" id="vision">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 about-left">
-					<div id="container" style="min-width: 100%; height: 400px; margin: 0 auto"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="services">Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="blog">Insights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="about">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="contact">Contact</a>
+              </li>
+              <li class="nav-item nav-cta">
+                <a class="nav-link btn btn-color" href="contact">Request a Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-				</div>
-				<div class="col-lg-6 about-right">
-					<h1>
-						We Strongly Believe </br>
-						in the transformative power of data
-					</h1>
-					<p class="pt-30 pb-30">
-						We do this with a clear focus on delivering prompt, actionable and platform agnostic insights.
-						We use Machine Learning and Business Intelligence solutions to help you know, analyze and shape
-						the tomorrow.
-						Our Machine Learning products not only help you understand the chaotic tomorrow but also draw
-						meaningful insights from it thus giving you an edge over your competition.
-					</p>
-					<!-- <a href="#" class="primary-btn2 header-btn text-uppercase">See Details</a> -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End about Area -->
+    <!-- Body content -->
+    <div class="page-main">
+      <section class="home-banner">
+        <div class="container">
+          <div class="home-banner-box">
+            <div class="home-banner-box-content">
+              <div class="row">
+                <div class="col-lg-5 col">
+                  <h1>Helping organizations leverage the power of data</h1>
+                  <p>We are on a mission to change the'gut-feel' way of business to a more data-driven ideology by helping organizations realize the potential of data.</p>
+                  <a href="contact" class="btn btn-color">Get a Quote</a><a href="services" class="btn btn-orange">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/home-banner-mobile.svg" alt="">
+        </div>
+      </section>
 
-	<!-- Start service Area -->
-	<section class="service-area section-gap" id="products">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-60 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Our Craftsmanship</h1>
-						<!-- <p>Who are in extremely love with eco friendly system.</p> -->
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-service">
-						<span class="lnr lnr-magic-wand"></span>
-						<h4 class="pt-60 pb-20">MOVIE WIZARD</h4>
-						<p>
-							Movie performance dashboard that gives you information about movie performance beforehand,
-							hence you
-							always make well a informed decision
-						</p>
-						<a href="#movieWizzard">See Details</a>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-service">
-						<span class="lnr lnr-rocket"></span>
-						<h4 class="pt-60 pb-20">REVENUE DASHBOARD</h4>
-						<p>Dashboard that gives a holistic view of the business during key business meetings</p>
-						<p>Very handy Dashboard used by top and middle level management to understand the performance of
-							the entire
-							business.
-							This helps monitor multiple parameters like FCT share, AdGRP share, Client Index, Effective
-							Rates etc. at
-							client and channel level thus helping optimize revenue.
+      <section class="section-product">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+              <div class="content-wrap content-center">
+                <div class="content-heading">
+                  <h2 class="text-orange f800">Our Offerings</h2>
+                  <p class="text-black">Through our products and services, we help you improve the efficiency and effectiveness while keeping your objectives at the core</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="text-center">
+                  <img src="images/product-1.svg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body text-center">
+                  <div class="card-title">
+                    <h3 class="f14 f600">Predictive Modeling and Statistical Analysis</h3>
+                  </div>
+                  <p class="card-text text-grey f14">Battle-tested statistical techniques to continuously supply you with insights and intelligence</p>
+                  <a href="services#predictive-modeling-and-statistical-analysis" class="btn-plus"><i class="flaticon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="text-center">
+                  <img src="images/product-2.svg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body text-center">
+                  <div class="card-title">
+                    <h3 class="f14 f600">Dynamic Visualization and Data-driven Storytelling</h3>
+                  </div>
+                  <p class="card-text text-grey f14">Automated and customized BI dashboards that have a direct positive impact on your bottom-line</p>
+                  <a href="services#dynamic-visualization-and-data-driven-storytelling" class="btn-plus"><i class="flaticon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="text-center">
+                  <img src="images/product-4.svg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body text-center">
+                  <div class="card-title">
+                    <h3 class="f14 f600">Consumer Insights through Sentiment Analysis</h3>
+                  </div>
+                  <p class="card-text text-grey f14">Audience research tool, using comparative language analysis to help marketers discover real insights</p>
+                  <a href="services#consumer-insights-through-sentiment-analysis" class="btn-plus"><i class="flaticon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="text-center">
+                  <img src="images/product-3.svg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body text-center">
+                  <div class="card-title">
+                    <h3 class="f14 f600">Rapid Product Development and Prototyping</h3>
+                  </div>
+                  <p class="card-text text-grey f14">Channel Performance Dashboard, that reduced around 600 Man Hrs per month by MIS team</p>
+                  <a href="services#rapid-product-development-and-prototyping" class="btn-plus"><i class="flaticon-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						</p>
-						<a href="#revenueDashboard">See Details</a>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-service">
-						<span class="lnr lnr-chart-bars"></span>
-						<h4 class="pt-60 pb-20">Weekly Channel Performance Dashboard</h4>
-						<p>
-							This Dashboard is a step in the direction of making lives easier and faster for the sales
-							team
-							This Dashboard gives channel performance in Multiple Target Groups and Market Cuts thus
-							making the sales
-							force independent and always updated with numbers
-							An easily accessible dashboard, that’s completely device agnostic and thus most suitable for
-							situations
-							like elevator pitches.
-						</p>
-						<a href="#performanceDashboard">See Details</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End service Area -->
+      <section class="section-about orange">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+              <img src="images/about-graph.png" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+              <div class="content-wrap">
+                <div class="content-heading">
+                  <h2 class="text-white f800">Data is Power</h2>
+                </div>
+                <p class="text-white">We are currently on the cusp of data explosion and we need to be prepared for it. Our services help you battle-ready by helping you analyze the most complex form of datasets, drive insights and reduce overheads.</p>
+                <a href="about" class="btn btn-white-tr">Get to Know Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<section class="about-area section-gap">
-		<div class="container">
-			<div class="row align-items-center" id="movieWizzard">
-				<iframe width="100%" height="800" style="margin-bottom: 10px; margin-top: 100px;"
-					src="https://app.powerbi.com/view?r=eyJrIjoiYmI0ZjQxNjEtNWJkMy00MzhjLWEyMTgtZWM2NTQwYWFiNTA0IiwidCI6IjIzNzRlYTYzLTcyYTgtNDIyMi1iY2UyLWVjMDRlZmQ1NzRjNCJ9"></iframe>
-			</div>
-			<div class="row align-items-center" id="revenueDashboard">
-				<iframe width="100%" height="800" style="margin-bottom: 10px; margin-top: 100px;"
-					src="https://app.powerbi.com/view?r=eyJrIjoiZWYwMGY4NzQtMmRkMi00ODdjLWE0NmEtNGVmNTA4Y2M5ODAwIiwidCI6IjIzNzRlYTYzLTcyYTgtNDIyMi1iY2UyLWVjMDRlZmQ1NzRjNCJ9"></iframe>
-			</div>
-			<div class="row align-items-center" id="performanceDashboard">
-				<iframe width="100%" height="800" style="margin-bottom: 10px; margin-top: 100px;"
-					src="https://app.powerbi.com/view?r=eyJrIjoiMjBiOGNiOTctY2NkZS00MDE4LWFkODYtOTk0MGY1MDU2ZGQ5IiwidCI6IjIzNzRlYTYzLTcyYTgtNDIyMi1iY2UyLWVjMDRlZmQ1NzRjNCJ9"></iframe>
-			</div>
-		</div>
-	</section>
+      <section class="section-services">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 d-none d-lg-block">
+              <img src="images/services.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="content-wrap">
+                <div class="content-heading">
+                  <h2 class="text-orange f800">Our Core Analytics Services</h2>
+                </div>
+              </div>
+              <div class="container">
+                <ul class="list-unstyled row service-list">
+                  <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-data-science"></i></span><h3 class="f16 f600">AI + Data Science</h3></li>
+                  <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-bi-dashboard"></i></span><h3 class="f16 f600">BI + Dashboards</h3></li>
+                  <!-- <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-big-data"></i></span><h3 class="f16 f600">Big Data</h3></li> -->
+                  <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-data-integration"></i></span><h3 class="f16 f600">Data Integration</h3></li>
+                  <!-- <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-marketing-analytics"></i></span><h3 class="f16 f600">Marketing Analytics</h3></li> -->
+                  <!-- <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-market-research"></i></span><h3 class="f16 f600">Market Research</h3></li> -->
+                  <li class="col-md-6"><span class="orange text-center"><i class="text-white flaticon-customer-analytics"></i></span><h3 class="f16 f600">Customer Analytics</h3></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- <section class="section-blog orange-fade">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="content-wrap orange-flat">
+                <div class="content-heading">
+                  <h2 class="text-white f800">Lorem Blog Section Title</h2>
+                  <p class="text-black lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus obcaecati dolore nulla veritatis quaerat.</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, blanditiis ipsam distinctio praesentium modi asperiores quae fugit autem, officia tenetur repudiandae laborum, est explicabo vitae. Veniam repellat reprehenderit aliquam saepe.</p>
+                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus obcaecati dolore nulla veritatis quaerat, temporibus minus incidunt.</p>
+                <a href="blog" class="btn">See More Blog Posts</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="blog-post-wrap">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="blog/india-media-industry-its-problems-and-scope-for-ai"><h3 class="f18 f800 text-orange">India Media Industry, its problems and scope for AI</h3></a>
+                          <p class="f12 blog-data"><span class="blog-date">May 11, 2019</span><a href="javascript: void(0);" class="blog-author">Hrishikesh Joshi</a><a href="javascript: void(0);" class="blog-tag">AI</a><a href="javascript: void(0);" class="blog-tag">Media</a><a href="javascript: void(0);" class="blog-tag">Entertainment</a></p>
+                        </div>
+                        <div class="card-text">
+                          <p class="text-grey f14">Companies are already challenging the status quo by building systems that track real-time viewership at a much granular level...</p>
+                          <a class="f14" href="blog/india-media-industry-its-problems-and-scope-for-ai"> Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="blog/blog-technical"><h3 class="f18 f800 text-orange">Lorem ipsum dolor sit amet consec tetur adipisi</h3></a>
+                          <p class="f12 blog-data"><span class="blog-date">September 26, 2019</span><a href="javascript: void(0);" class="blog-author">Ashish Mohite</a><a href="javascript: void(0);" class="blog-tag">Rails</a><a href="javascript: void(0);" class="blog-tag">ROR</a></p>
+                        </div>
+                        <div class="card-text">
+                          <p class="text-grey f14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus numquam aut modi dolore suscipit...</p>
+                          <a class="f14" href="blog/blog-technical"> Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card last-card">
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="blog/blog-technical"><h3 class="f18 f800 text-orange">Lorem ipsum dolor sit amet, consec tetur adipisicing elit dolor</h3></a>
+                          <p class="f12 blog-data"><span class="blog-date">September 26, 2019</span><a href="javascript: void(0);" class="blog-author">Ashish Mohite</a><a href="javascript: void(0);" class="blog-tag">Tag Name</a></p>
+                        </div>
+                        <div class="card-text">
+                          <p class="text-grey f14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus numquam aut modi dolore suscipit...</p>
+                          <a class="f14" href="blog/blog-technical"> Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
+      <section class="section-blog-temp orange-fade">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+              <div class="content-wrap content-center">
+                <div class="content-heading">
+                  <h2 class="text-orange f800">Blog &amp; Articles</h2>
+                  <p class="text-black">We share our experiences through blogs. We write about our research studies and how we helped the industries by providing action oriented insights, intelligence and process automation solutions.</p>
+                  <a href="blog" class="btn btn-orange-tr">See All Blog Posts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section-process">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="content-wrap content-center">
+                <div class="content-heading">
+                  <h2 class="text-orange f800">How We Discover Real Insights</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="feature-list">
+              <div class="feature-icon text-center">
+                <i class="flaticon-data-source"></i>
+              </div>
+              <div class="feature-name text-center">
+                <h3 class="f500">Data Sources</h3>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feature-icon text-center">
+                <i class="flaticon-big-data"></i>
+              </div>
+              <div class="feature-name text-center">
+                <h3 class="f500">Database Management</h3>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feature-icon text-center">
+                <i class="flaticon-ai"></i>
+              </div>
+              <div class="feature-name text-center">
+                <h3 class="f500">Predictive Models</h3>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feature-icon text-center">
+                <i class="flaticon-learning"></i>
+              </div>
+              <div class="feature-name text-center">
+                <h3 class="f500">Visualization</h3>
+              </div>
+            </div>
+            <div class="feature-list feature-list-last">
+              <div class="feature-icon text-center">
+                <i class="flaticon-bi-dashboard"></i>
+              </div>
+              <div class="feature-name text-center">
+                <h3 class="f500">Report Automation</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--/Body content -->
 
-	<!-- Start related Area -->
-	<!-- <section class="related-area section-gap">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-60 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Device Related Services</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="active-realated-carusel">
-					<div class="item row align-items-center">
-						<div class="col-lg-6 rel-left">
-							<h1>
-								Helps You Increasing <br>
-								Website Traffic
-							</h1>
-							<p class="pt-30 pb-30">
-								Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</p>
-							<a href="#" class="primary-btn2 header-btn text-uppercase">Research Details</a>
-						</div>
-						<div class="col-lg-6">
-							<img class="img-fluid" src="img/c1.jpg" alt="">
-						</div>
-					</div>
-					<div class="item row align-items-center">
-						<div class="col-lg-6 rel-left">
-							<h1>
-								Helps You Increasing <br>
-								Website Traffic
-							</h1>
-							<p class="pt-30 pb-30">
-								Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</p>
-							<a href="#" class="primary-btn2 header-btn text-uppercase">Research Details</a>
-						</div>
-						<div class="col-lg-6">
-							<img class="img-fluid" src="img/c1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- End related Area -->
+    <footer class="footer black">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo"><img src="images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 order-md-1 order-2">
+                <div class="footer-column quick-links">
+                  <p class="footer-heading f500">Quick links</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/" class="f14 f300">Home</a></li>
+                    <li><a href="services" class="f14 f300">Offerings</a></li>
+                    <li><a href="blog" class="f14 f300">Insights</a></li>
+                    <li><a href="about" class="f14 f300">Company</a></li>
+                    <li><a href="contact" class="f14 f300">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-2 order-3">
+                <div class="footer-column social-links">
+                  <p class="footer-heading f500">Follow</p>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/company/venanalytics-pvt-ltd/" class="f14 f300" target="_blank"><i class="flaticon-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-facebook"></i> Facebook</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-twitter"></i> Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-3 order-1">
+                <div class="footer-column contact-links">
+                  <p class="footer-heading f500">Get in touch</p>
+                  <ul class="list-unstyled">
+                    <li><a href="mailto:hello@venanalytics.io" class="f14 f300 email">hello@venanalytics.io</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="f12">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Ven Analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-	<!-- Start price Area -->
-	<!-- <section class="price-area section-gap" id="plan">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-60 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Choose the Perfect Plan for you</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Standard</h4>
-								<p>For the <br>individuals</p>
-							</div>
-							<div class="top-right">
-								<h1>£199</h1>
-							</div>
-						</div>
-						<div class="bottom-sec">
-							<p>
-								“Few would argue that, despite the advancements
-							</p>
-						</div>
-						<div class="end-sec">
-							<ul>
-								<li>2.5 GB Free Photos</li>
-								<li>Secure Online Transfer Indeed</li>
-								<li>Unlimited Styles for interface</li>
-								<li>Reliable Customer Service</li>
-								<li>Manual Backup Provided</li>
-							</ul>
-							<button class="primary-btn price-btn mt-20">Purchase Plan<span
-									class="lnr lnr-arrow-right"></span></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Business</h4>
-								<p>For the <br>small Company</p>
-							</div>
-							<div class="top-right">
-								<h1>£399</h1>
-							</div>
-						</div>
-						<div class="bottom-sec">
-							<p>
-								“Few would argue that, despite the advancements
-							</p>
-						</div>
-						<div class="end-sec">
-							<ul>
-								<li>2.5 GB Free Photos</li>
-								<li>Secure Online Transfer Indeed</li>
-								<li>Unlimited Styles for interface</li>
-								<li>Reliable Customer Service</li>
-								<li>Manual Backup Provided</li>
-							</ul>
-							<button class="primary-btn price-btn mt-20">Purchase Plan<span
-									class="lnr lnr-arrow-right"></span></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-price">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Ultimate</h4>
-								<p>For the <br>large Company</p>
-							</div>
-							<div class="top-right">
-								<h1>£499</h1>
-							</div>
-						</div>
-						<div class="bottom-sec">
-							<p>
-								“Few would argue that, despite the advancements
-							</p>
-						</div>
-						<div class="end-sec">
-							<ul>
-								<li>2.5 GB Free Photos</li>
-								<li>Secure Online Transfer Indeed</li>
-								<li>Unlimited Styles for interface</li>
-								<li>Reliable Customer Service</li>
-								<li>Manual Backup Provided</li>
-							</ul>
-							<button class="primary-btn price-btn mt-20">Purchase Plan<span
-									class="lnr lnr-arrow-right"></span></button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section> -->
-	<!-- End price Area -->
-
-
-	<!-- Start team Area -->
-	<section class="team-area section-gap" id="team">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">About Ven Analytics Team</h1>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center d-flex align-items-center">
-				<div class="col-md-3 single-team">
-					<div class="thumb">
-						<img class="img-fluid" src="img/rhishi.jpg" alt="">
-						<div class="align-items-center justify-content-center d-flex">
-							<!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-							<a href="https://twitter.com/rhishikesh29"><i class="fa fa-twitter"></i></a>
-							<a href="https://www.linkedin.com/in/rhishikesh-joshi-b12abb75/"><i
-									class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-					<div class="meta-text mt-30 text-center">
-						<h4>Rhishikesh Joshi</h4>
-						<p>CEO at VenAnalytics</p>
-					</div>
-				</div>
-				<div class="col-md-3 single-team">
-					<div class="thumb">
-						<img class="img-fluid" src="img/ashish.png" alt="">
-						<div class="align-items-center justify-content-center d-flex">
-							<!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-							<a href="https://twitter.com/superaashish"><i class="fa fa-twitter"></i></a>
-							<a href="https://www.linkedin.com/in/ashish-mohite-9b281337/"><i
-									class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-					<div class="meta-text mt-30 text-center">
-						<h4>Ashish Mohite</h4>
-						<p>CTO at VenAnalytics</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End team Area -->
-
-
-	<!-- Start testimonial Area -->
-	<!-- <section class="testimonial-area relative section-gap">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row">
-				<div class="active-testimonial">
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/user1.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-								speaker, projector, hardware.
-							</p>
-							<h4 mt-30></h4>
-							<p></p>
-						</div>
-					</div>
-					<div class="single-testimonial item d-flex flex-row">
-						<div class="thumb">
-							<img class="img-fluid" src="img/user2.png" alt="">
-						</div>
-						<div class="desc">
-							<p>
-								Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-								speaker, projector, hardware.
-							</p>
-							<h4 mt-30></h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- End testimonial Area -->
-
-
-	<!-- start blog Area -->
-	<!-- <section class="blog-area section-gap" id="blog">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Latest From Our Blog</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b1.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<h4><a href="#">Addiction When Gambling
-							Becomes A Problem</a></h4>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b2.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<h4><a href="#">Addiction When Gambling
-							Becomes A Problem</a></h4>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b3.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<h4><a href="#">Addiction When Gambling
-							Becomes A Problem</a></h4>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b4.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<h4><a href="#">Addiction When Gambling
-							Becomes A Problem</a></h4>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- end blog Area -->
-
-	<!-- Start brand Area -->
-	<!-- <section class="brand-area">
-		<div class="container">
-			<div class="row logo-wrap">
-				<a class="col single-img" href="#">
-					<img class="d-block mx-auto" src="img/l1.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="d-block mx-auto" src="img/l2.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="d-block mx-auto" src="img/l3.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="d-block mx-auto" src="img/l4.png" alt="">
-				</a>
-				<a class="col single-img" href="#">
-					<img class="d-block mx-auto" src="img/l5.png" alt="">
-				</a>
-			</div>
-		</div>
-	</section> -->
-	<!-- End brand Area -->
-
-	<!-- start contact Area -->
-	<section class="about-area section-gap" id="contact">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-30 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Contact Us</h1>
-						<p></p>
-					</div>
-				</div>
-			</div>
-			<form class="form-area mt-60" id="myForm" action="mail.php" method="post" class="contact-form text-right">
-				<div class="row">
-					<div class="col-lg-6 form-group">
-						<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control"
-							required="" type="text">
-
-						<input name="email" placeholder="Enter email address"
-							pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
-							required="" type="email">
-
-						<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control"
-							required="" type="text">
-					</div>
-					<div class="col-lg-6 form-group">
-						<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege"
-							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
-							required=""></textarea>
-						<button class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
-						<div class="alert-msg">
-						</div>
-					</div>
-				</div>
-			</form>
-
-		</div>
-	</section>
-	<!-- end contact Area -->
-
-
-	<!-- start footer Area -->
-	<footer class="footer-area section-gap">
-		<div class="container">
-			<!-- <div class="row">
-				<div class="col-lg-3  col-md-12">
-					<div class="single-footer-widget">
-						 <h6>Top Products</h6>
-						<ul class="footer-nav">
-							<li><a href="#">Managed Website</a></li>
-							<li><a href="#">Manage Reputation</a></li>
-							<li><a href="#">Power Tools</a></li>
-							<li><a href="#">Marketing Service</a></li>
-						</ul> 
-					</div>
-				</div>
-				<div class="col-lg-6  col-md-12">
-					<div class="single-footer-widget newsletter">
-						<h6>Newsletter</h6>
-						<p>You can trust us. we only send promo offers, not a single spam.</p>
-						<div id="mc_embed_signup">
-							<form target="_blank" novalidate="true"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="form-inline">
-
-								<div class="form-group row" style="width: 100%">
-									<div class="col-lg-8 col-md-12">
-										<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''"
-											onblur="this.placeholder = 'Enter Email '" required="" type="email">
-										<div style="position: absolute; left: -5000px;">
-											<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-										</div>
-									</div>
-
-									<div class="col-lg-4 col-md-12">
-										<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
-									</div>
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3  col-md-12">
-					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instragram Feed</h6>
-						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="img/i1.jpg" alt=""></li>
-							<li><img src="img/i2.jpg" alt=""></li>
-							<li><img src="img/i3.jpg" alt=""></li>
-							<li><img src="img/i4.jpg" alt=""></li>
-							<li><img src="img/i5.jpg" alt=""></li>
-							<li><img src="img/i6.jpg" alt=""></li>
-							<li><img src="img/i7.jpg" alt=""></li>
-							<li><img src="img/i8.jpg" alt=""></li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
-
-			<div class="row footer-bottom d-flex justify-content-between">
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				<!-- <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;
-					<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i
-						class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-				</p> -->
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				<div class=" footer-social">
-					<!-- <a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a> -->
-					<a href="https://www.linkedin.com/company/venanalytics-pvt-ltd"><i class="fa fa-linkedin"></i></a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer Area -->
-
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-		crossorigin="anonymous"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-
-	<script src="js/highcharts.js"></script>
-	<script src="js/modules/exporting.js"></script>
-	<script src="js/chartscript.js"></script>
-
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
