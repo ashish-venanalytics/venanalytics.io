@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Unraveling World Cup 2019 - A Data Story</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140896656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140896656-1');
+    </script>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container navbar-content">
+          <a class="navbar-brand" href="/"><img src="../images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+          <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="flaticon-menu"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../services">Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../blog">Insights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../about">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../contact">Contact</a>
+              </li>
+              <li class="nav-item nav-cta">
+                <a class="nav-link btn btn-color" href="../contact">Request a Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Body content -->
+    <div class="breadcrumb-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav justify-content-end">
+              <li class="nav-item f14"><a class="nav-link" href="../blog">All Articles</a></li>
+              <li class="nav-item f14"><a class="nav-link" href="categories">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-blog-post">
+      <section class="section-post">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+              <div class="content-wrap">
+                <div class="content-heading">
+                  <h1 class="text-orange">Unraveling World Cup 2019 - A Data Story</h1>
+                </div>
+
+                <p class="f14 blog-data">Posted on <span class="blog-date">Aug 16, 2019</span> by <a href="javascript: void(0);" class="blog-author">Hrishikesh Joshi, Ashish Mohite</a> in <a href="javascript: void(0);" class="blog-tag first-tag">AI</a><a href="javascript: void(0);" class="blog-tag">Media</a><a href="javascript: void(0);" class="blog-tag">Entertainment</a></p>
+                <p dir="ltr">
+                    <h3>Problem:</h3>
+                </p>
+                <p dir="ltr">
+                    Let us start with explaining you in brief the business problem in Indian
+                    Media Industry that we intend to tackle. There are majorly 4 stakeholders
+                    viz. Advertisers, Media Agencies, Broadcasters and Broadcast Audience
+                    Research Council (BARC) – central rating agency.
+                </p>
+                <p dir="ltr">
+                    Advertisers hire Media Agencies to make an optimized media plan for
+                    TV/Digital/Print/Radio. In our case we will be focused only on TV which
+                    alone contributes to 44% of overall Media Industry (“A billion screens of
+                    opportunity” a report by FICCI-EY 2019). During campaign planning phase,
+                    many media agencies rely on cognitive bias rather than on data. The reason
+                    being, viewership data is made available post-airing so there is no way of
+                    knowing the content performance before the actual airing.
+                </p>
+                <p dir="ltr">
+                    Using advanced Machine Learning algorithms, we try to determine this
+                    performance well in advance which helps the agencies take better planning
+                    decisions.To read more in detail on this, please refer to our previous
+                    blog: <a href="https://www.venanalytics.io/blog/india-media-industry-its-problems-and-scope-for-ai">India Media Industry, its problems and scope for AI</a>
+                </p>
+                <p dir="ltr">
+                    In India Cricket is not just a sport it’s a sentiment that unites the
+                    nation, which means a lot of TV viewership and naturally this gives
+                    opportunity to a lot of advertisers and agencies. Keeping this in mind we
+                    took it upon us to make sure that these advertisers/agencies take the most
+                    informed decision for ICC World Cup 2019.
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h3>Solution:</h3>
+                </p>
+                <p dir="ltr">
+                    There are two deliverables that we offered:
+                </p>
+                <ol style="list-style-position: inside;">
+                    <li dir="ltr">Dashboard</li>
+                    <li dir="ltr">Report</li>
+                </ol>
+                <p dir="ltr">
+                    Dashboard helps the user derive his own conclusions from the data. The data
+                    is visualized in such a way the it becomes most hassle-free to communicate
+                    their own data story. Dashboard helps the user get a perspective on various
+                    factors that affect the viewership of a match. These factors can be
+                    classified into two broad categories:
+                </p>
+                <ul style="list-style-position: inside;">
+                    <li dir="ltr">Known Factors</li>
+                    <li dir="ltr">Unknown Factors</li>
+                </ul>
+                </br>
+                <p dir="ltr">
+                    Know factors are those that are more factual than derived. Factors like
+                    time of the match, day of the week, venue etc.
+                </p>
+                <p dir="ltr">
+                    Unknown factors are those that are derived form our understanding of the
+                    data, like match dynamics. These are the tricky ones.
+                </p>
+                <p dir="ltr">
+                    The second part of the deliverable is the report. This is basically a
+                    platter of insights put together with a sole purpose of call to action.
+                    Let’s go through some of the interesting findings and how these affect our
+                    goal of projecting match-by-match viewership of World Cup 2019.
+                </p>
+                <p dir="ltr">
+                    ICC T20 World Cup 2016 alone accounted to 13% of the total cricket
+                    viewership since October 2015, which means that Cricket World Cup is the
+                    biggest viewed sports event in India. T20 format garners 1.4x viewership
+                    that ODI of Test. Matches were India is playing garner 15x viewership than
+                    the matches where India is not playing. Also, matches in India garner 5x
+                    viewership that those happening outside India. Of course, there are other
+                    elements at play but if we are just looking at these numbers in isolation,
+                    we understand that had the world cup been in India it would have rated
+                    higher that in England.
+                </p>
+                <p dir="ltr">
+                    Factors like telecast channel, hour of the day and day of the week are
+                    amongst the important “known factors” in determining the final viewership.
+                </p>
+                <p dir="ltr">
+                    We observed that there is a stark co-relation between the TV viewership
+                    numbers and Google Trends data.
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/Oskpv7GaT1o9_ntnsaNWK8vSXcK44mzLlJ8arcCIvLLfNlgaDMrHD6v9BFoBmboGczQErdfdTu63IEs_A7gnyWqYWZpOVA_tFgyj-66umiSkDCw-PJDUvEGkZzc8tzpsZSR_gSvEmpex6oLgzw"/>
+                </p>
+                <p dir="ltr">
+                    For Google Trends we took into account the Team Name searches in India. We
+                    see that there is a spike in the search for Indian National Cricket Team
+                    and Pakistan National Cricket Team during ICC Champions Trophy Match 4. The
+                    highest spike in terms of viewership and google tends.
+                </p>
+                <p dir="ltr">
+                    The other and a more important parameter in determining the viewership is
+                    the match dynamics. In order to estimate the match dynamics, we first need
+                    to get a good hang of the team composition and performance. To understand
+                    this, we plotted the individual player performances on 3 scatter plots viz.
+                    Batting Matrix, Bowling Matrix and Allrounder Matrix.
+                </p>
+                <br/>
+
+                <p dir="ltr">
+                    <h5>Batting Matrix:</h5>
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh5.googleusercontent.com/v1CJUPW_B5xtpCmaSk-Tez9Eh6wuLxARipyEjt5Wj2PaoF4nv4uxgsb3lZV81nIBYI-4ADAUA5Mktqh8FbiuqLHVopxsnMpMRVKZWF01P5Zh2v8U29X0aKntQzRHkxtONCNkqd1dG9fz3I6dTg"/>
+                </p>
+                <p dir="ltr">
+                    On Y-axis we have the form of a player which is calculated as follows
+                </p>
+                <p dir="ltr">
+                    Batsman Form = (Runs scored per match in last 10 matches/Career average of
+                    runs per match)*100
+                </p>
+                <p dir="ltr">
+                    On X-Axis we have Runs scored per match in last 10 matches and Strike Rate
+                    per match in last 10 matches.
+                </p>
+                <p dir="ltr">
+                    England would definitely be a challenging side for opposition bowlers
+                    EoinMorgan, Jason Roy, Jos Buttler are the top of their form. Pakistan also
+                    has a strong batting line-up with batsmen such as Babar Azam, Fakhar Zaman
+                    and Sarfaraz Ahmed
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Bowling Matrix:</h5>
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh3.googleusercontent.com/PfUWqwh56o68mQfc_8pxDvHnr6yDyFog58QRC5597Rz0-Ti7PYR7DtxF8sq5LDt9OyEhdtwkb9xyyK_tESexZy1YpsGgcPUyDBhHwywfi_bXLfgcZ7YKD8EXNMJ9dPMHKNDSrJPrzhhfiVzo9g"/>
+                </p>
+                <p dir="ltr">
+                    On Y-axis we have the form of a player which is calculated as follows
+                </p>
+                <p dir="ltr">
+                    Bowler Form = (Wickets per match in last 10 matches/Career average of
+                    wickets per match)*100
+                </p>
+                <p dir="ltr">
+                    On X-Axis we have wickets scored per match in last 10 matches and economy
+                    per match in last 10 matches.
+                </p>
+                <p dir="ltr">
+                    India has a top-notch bowling line-up with Bhuvneshwar Kumar, Mohammed
+                    Shami, Yuzvendra Chahal in to form. Also Mohammed Shami and Jasprit Bumra
+                    have a great economy record. Trent Boult (NZ), Adil Rashid (ENG), Matt
+                    Henry (NZ), Mujeeb Ur Rahman (AFG), Dale Steyn (SA) are some of the bowlers
+                    to watch out for
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>All-Rounder Matrix:</h5>
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/UkZ2px2EItV6ciJiuwcwCB8olH0j8OC0IZ9ui-3F31mufEd5o9KQAXoPIjYl7_tsX4wWEO6BUkmtjp-2ixQwJUDv3Kz15dIzKNWrtBeB03TF5wE941d4XftZTO-2W3J8_T6Iz5hvQkV7CTNHtw"/>
+                </p>
+                <p dir="ltr">
+                    First matrix is wickets vs runs per match for last 10 while second match
+                    has the all-rounder’s bowling form vs batting form
+                </p>
+                <p dir="ltr">
+                    Chris Woakes (ENG), Shakib Al Hasan (BAN), Mohmmad Nabi (AFG), Marcus
+                    Stoinis (AUS) are amongst the top All-rounders. India’s wobbly middle order
+                    can be attributed to the underperformance of Hardik Pandya, Vijay Shankar
+                    and Dinesh Kartik. This could be fatal against teams like England and
+                    Australia.
+                </p>
+                <p dir="ltr">
+                    We also analyzed the overall team performance and this is how the overall
+                    team performances look.
+                </p>
+                <p dir="ltr">
+                    Team Runs vs Team Wickets per match over last 10 matches
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/R0rklFILxl2pDfkJ-nFXlLKP0bU9UTzCZh_Y5NY6UudBNiUZvJT0VPywtTl2nAMSATJLRItRPMsnPu2MclkiIeRfOw1H1hkx4JJoBOOfqLEx7y_7yDELzkZ7ZIg3BmBxRwk9QxW840AN81sdEg"/>
+                </p>
+                <br/>
+                <p dir="ltr">
+                    Team overall batting form vs Team overall batting form
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh5.googleusercontent.com/3QvB0sKNho_YoVWr3_jhGGf71i8NtPwNTe50cWGktp0v_Myq4yp52PLDewdoC_ey9RP2wWYul1xtchGufOxfNZqo5P53T0re9wr3KlW2Ab1l1w4aMANeof9RievSgcHpd3lVMv3M1jG8-7M8oA"/>
+                </p>
+                <p dir="ltr">
+                    These matrices reveal some interesting insights. Australia is the most
+                    likely teams to win the world cup, however England is also just right there
+                    with an added home advantage. India, New Zealand, South Africa and
+                    Afghanistan are Bowling heavy teams while Pakistan is a more Batting heavy
+                    team. Amongst the tail enders are Bangladesh, Sri Lanka and West Indies.
+                </p>
+                <p dir="ltr">
+                    The purpose of doing this was to understand the kind of clashes that we can
+                    expect between two teams. For example, it is likely that clashes between
+                    the teams in Q3 of first matrix are likely to be low target matches.
+                </p>
+                <p dir="ltr">
+                    Since we know that batting attracts more viewership than bowling, we can
+                    assume that these matches would have relatively low viewership as oppose to
+                    matches between Australia, England or Pakistan. Based on this we make some
+                    corrections in our projections.
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Project Flow:</h5>
+                </p>
+                <p dir="ltr">
+                    Let’s take a look at the project workflow step by step:
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh3.googleusercontent.com/Zd59oZkka0mQTAPpco65vKXau_AyMeJoXe9MZunpbFeslsKJq6TKzmYq3_jl2unXsz-fHNZw0nGTj6lVi4OPoCAtdkV9DdWG6wPL-O4hDIfmqVVy7_BlbM51LUFvU0nbjL38Z_MvgFRU0RfG8w"/>
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Data Extraction/Scraping:</h5>
+                </p>
+                <p dir="ltr">
+                    Cricbuzz was our main source of data. But collecting data manually was impossible so we wrote a scraper in Python.
+                </p>
+                <p dir="ltr">
+                    Finding the links for every tournament was a difficult task as cricbuzz uses slugs instead of integer identifier which we could have used by simply incrementing the number in url.</br>
+                    So we decided to take help of google ;) </br>
+                    Google search request has URL something like this <em>https://www.google.co.in/search?q="your search query"</em></br>
+                    So, We made a list of tournaments that we want to find the matches of and then used the above query technique to programatically get the links for listing pages on cricbuzz.
+                </p>
+                <p dir="ltr">
+                    Once we have found the listing page of matches next challenge was to find the links to details page of each match from the list and also detect type of the match.
+                    Finding the match type(T20, ODI, Test) has few catches as cricbuzz uses angular ng tags it's not easy to scrape using css query so we used to find ng attrubutes and then the regex match was used to find the type of the match
+                </p>
+                <p>
+                    After we found the type of the match we wrote 3 different scrapers for 3 types of matches. And then all the data was pushed into a CSV/JSON
+                </p>
+                <p dir="ltr">
+                    Once we have the data in CSV/JSON we can apply our model
+                </p>
+                <b>Notes:</b>
+                <ul style="list-style-position: inside;">
+                    <li>You need to be aware of ip blacklisting while scraping. Be gentle to the website by not attacking it with thousands of requests in very short span of time. Instead, use <em>time.sleep</em>  to make sure that you are not banned by the website for DDOS attack </li>
+                    <li>
+                        Using selenium with chrome driver tricks sites in to believing that the user is atual person instead of a bot.
+                    </li>
+                </ul>
+                </br>
+                <p dir="ltr">
+                    Past viewership data can be obtained through a licensed software; BARC
+                    India Media Workstation (BMW).
+                </p>
+                <p dir="ltr">
+                    <h5>Google Trends for Digital Buzz:</h5>
+                </p>
+                <p dir="ltr">
+                    For this we extracted 5 years of Google trends data for all the teams.
+                    Google trends gives us relative data for the keyword with 100 as the
+                    maximum searches in that time span. Also, it allows us to compare and
+                    extract only 5 keywords data at a time. Therefore, to extract data for all
+                    the teams we had to take multiple extractions with first 4 searches kept
+                    constant and only changing the last team name. With date as the key field
+                    we combined this data with our original viewership data sheet.
+                </p>
+                <p dir="ltr">
+                    If we are taking an extraction of over a stretch of 5 years, we don’t get
+                    day by day data, but data aggregated over a week. Even then this data
+                    resonates quite perfectly with the viewership trends as we will see later.
+                </p>
+                <p dir="ltr">
+                    <h5>Data Pre-processing:</h5>
+                </p>
+                <p dir="ltr">
+                    Before putting everything into the model, there was a lot of
+                    data-preprocessing that had to be done. A combination of Pandas and MS
+                    Excel was used to do so. We chose a combined approach as some things were
+                    just easier to do in Excel while others using Pandas.
+                </p>
+                <p dir="ltr">
+                    Firstly, we created a joint excel sheet comprising data from all three data
+                    bases, viz Cricbuzz, BARC and Google trends; Cricket_final.xlsx. This was
+                    followed by adding some features either using excel or Pandas.
+                </p>
+                <p dir="ltr">
+                    Microsoft Excel
+                </p>
+                <p dir="ltr">
+                    <h5>Match No. of the Series:</h5>
+                </p>
+                <p dir="ltr">
+                    Entire sheet was sorted in the following order
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/gmftqc16UFdiqq1DW3_O0g8rv87Al_9MdGrGsUsaMnvz_fHftvq1Q1CIn1IUz4s3dsN5KBVTJ9sSYzpOpOcuYODGVR8KDUdsa1NyyXLdY_yta-qGGZs6NoAfSiP9jLVShdeUHox_rlBuE8ReNg"/>
+                </p>
+                <br/>
+                <p dir="ltr">
+                    Series is the name of the tournament
+                </p>
+                <p dir="ltr">
+                    Type is the match format
+                </p>
+                <p dir="ltr">
+                    Description is the name of the series as given by raw BARC (please refer to
+                    <a href="https://www.venanalytics.io/blog/india-media-industry-its-problems-and-scope-for-ai">our previous blog</a> for more details) data
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/D-rDPhPmHYKLqVLgvBUuxbLbXTet3OoRHVyf5H92vmgKwyBLBBnu80wxHO3KWAtmr8C5KmlBT60-o3R-5HACJbjlKcQXjkDC9GjVrJHKQ4CZ7e9i93K2UQ0lnH7W-HbnbKw0CoGCU8dV0Q5jYg"/>
+                </p>
+                <p dir="ltr">
+                    Using a simple Nested IF we numbered matches
+                </p>
+                <p dir="ltr">
+                  <pre>=IF(D3=D2,W2,IF(OR(Q3="ODI",Q3="T20"),IF(P3&amp;Q3&amp;U3=P2&amp;Q2&amp;U2,W2+1,1),IF(B3-B2&lt;=2,W2,IF(Q3=Q2,W2+1,1))))</pre>
+                </p>
+                <p dir="ltr">
+                    Following tournaments were rectified manually
+                </p>
+                <p dir="ltr">
+                    *Manually rectified list
+                </p>
+                <p dir="ltr">
+                    Asia Cup 2016
+                </p>
+                <p dir="ltr">
+                    Asia Cup 2018
+                </p>
+                <p dir="ltr">
+                    ICC T20 WC 2016 Qualifiers
+                </p>
+                <p dir="ltr">
+                    ICC T20 WC 2016
+                </p>
+                <p dir="ltr">
+                    ICC ODI WC 2018 Qualifiers
+                </p>
+                <p dir="ltr">
+                    ICC ODI WC 2018
+                </p>
+                <p dir="ltr">
+                    ICC Champions Trophy
+                </p>
+                <p dir="ltr">
+                    Pakistan Tour of England Match 1 (No Result)
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Pandas:</h5>
+                </p>
+                <p dir="ltr">
+                    Rest of the data massaging was done using Pandas. We divided the data into
+                    three sets (ODI, T20 and Test) based on match format. Model training was
+                    done on respective datasets. We observed that this small step significantly
+                    boosted up our prediction accuracy.
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Predictive Modeling:</h5>
+                </p>
+                <p dir="ltr">
+                    Each sub-dataset was split into train, test and validation sets. Since the
+                    subsets were relatively of a smaller sample size we did not opt for cross
+                    validation.
+                </p>
+                <p dir="ltr">
+                    Since we had a lot of categorical variables, we used Catboost for
+                    projections. We took into account the following features:
+                </p>
+                <ul style="list-style-position: inside;">
+                    <li dir="ltr">Channel</li>
+                    <li dir="ltr">Day of the week</li>
+                    <li dir="ltr">Start Time of the match</li>
+                    <li dir="ltr">Match Format</li>
+                    <li dir="ltr">Playing Teams</li>
+                    <li dir="ltr">Venue</li>
+                    <li dir="ltr">Year</li>
+                    <li dir="ltr">Match No. of that series</li>
+                    <li dir="ltr">Indian/Non-India Matches</li>
+                    <li dir="ltr">No. of Teams participating</li>
+                    <li dir="ltr">Type of the series (Bi-lateral, Tri-lateral, Asia, World, Qualifier)</li>
+                    <li dir="ltr">Match Type (Opening, Regular, Semi-final, Final)</li>
+                    <li dir="ltr">Total Buzz around the teams taken from Google Trends</li>
+                    <li dir="ltr">Viewership data</li>
+                </ul>
+                </br>
+                <p dir="ltr">
+                    Catboost gave us a very good accuracy on all the three sub-datasets. We
+                    opted for adjusted_R2 score as our scoring parameter. Adjusted_R2 is more
+                    reliable than R2 as it penalizes the model accuracy for any extra unwanted
+                    features. While in case of R2 accuracy will always increase for any
+                    addition in the features.
+                </p>
+                <p dir="ltr">
+                    T20: Training Accuracy – 90%; Test Accuracy – 90%; Validation Accuracy –
+                    90%
+                </p>
+                <p dir="ltr">
+                    ODI: Training Accuracy – 90.8%; Test Accuracy – 90.2%; Validation Accuracy
+                    – 82.9%
+                </p>
+                <p dir="ltr">
+                    Test: Training Accuracy – 90%; Test Accuracy – 90%; Validation Accuracy –
+                    90%
+                </p>
+                <br/>
+                <p dir="ltr">
+                    These seemed to be good accuracy numbers for a start. Over and above this
+                    we observed that matches between two bowling heavy teams like was likely to
+                    be a low run rate and hence a low target match and hence a less popular
+                    match. However, matches between batting heavy teams like teams generally
+                    garnered higher viewership. Keeping this in mind final predictions were
+                    adjusted by a factor of 10%.
+                </p>
+                <p dir="ltr">
+                    Finally, we used the model to predict TVRs for World Cup 2019.
+                </p>
+                <br/>
+                <p dir="ltr">
+                    <h5>Data Visualization:</h5>
+                </p>
+                <p dir="ltr">
+                    Power BI was used as the dashboard platform. The dashboard explains various
+                    features and their relationships with viewership across all three formats.
+                    We already looked into some of these earlier.
+                </p>
+                <p dir="ltr">
+                    Below is the snapshot of the Data model for Dashboard. Tables in the top
+                    row are loaded key tables, the ones in the middle are Fact tables and the
+                    ones in the last row are calculated key tables.
+                </p>
+                <p dir="ltr">
+                    Tables “Batting_team” and “Fielding_team” are calculated fact tables, used
+                    for calculating team level performance KPIs. “match_table” is used to
+                    calculate likely winner, which per say does not have a predictable impact
+                    on the viewership was however given as an add-on.
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh5.googleusercontent.com/BZ6SC7RWKDj8RjJhHAIHXfShMCFq0gDXEh6O23Dr0iPO_Mf1_5owY3iLTMirte8UShG4kRRcOl2ijyTMxBXsbTU2J20rjC_Q4CGraXPH_EHGJ-gPM_p17vXWxDPIJPfRMsXPnnhwOZkrKahg1A"
+                    />
+                </p>
+                <br/>
+                <p dir="ltr">
+                    All the data and respective predictions are as on 12.06.2019.
+                </p>
+                <p dir="ltr">
+                Please drop us a mail on    <a href="mailto:hello@venanalytics.io">hello@venanalytics.io</a> to get a
+                    copy of the updated report along with the dashboard link.
+                </p>
+                <div>
+                    <br/>
+                </div>
+              </div>
+
+              <div class="subscribe-box orange">
+                <h3 class="text-white text-center">Get access to proven analytical solutions</h3>
+                <form action="https://formspree.io/hello@venanalytics.io" method="POST" id="" novalidate="" />
+                  <div class="form-row justify-content-md-center">
+                    <div class="col-md-8">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your e-mail">
+                        <div class="input-group-append">
+                          <input type="button" class="btn btn-white-solid" value="Subscribe">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--/Body content -->
+
+    <footer class="footer black">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo"><img src="../images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 order-md-1 order-2">
+                <div class="footer-column quick-links">
+                  <p class="footer-heading f500">Quick links</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/" class="f14 f300">Home</a></li>
+                    <li><a href="../services" class="f14 f300">Offerings</a></li>
+                    <li><a href="../blog" class="f14 f300">Insights</a></li>
+                    <li><a href="../about" class="f14 f300">Company</a></li>
+                    <li><a href="../contact" class="f14 f300">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-2 order-3">
+                <div class="footer-column social-links">
+                  <p class="footer-heading f500">Follow</p>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/company/venanalytics-pvt-ltd/" class="f14 f300" target="_blank"><i class="flaticon-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-facebook"></i> Facebook</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-twitter"></i> Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-3 order-1">
+                <div class="footer-column contact-links">
+                  <p class="footer-heading f500">Get in touch</p>
+                  <ul class="list-unstyled">
+                    <li><a href="mailto:hello@venanalytics.io" class="f14 f300 email">hello@venanalytics.io</a></li>
+                    <li><a href="javascript:void(0)" class="f14 f300 email">701/A, Mangalya CHS, M.G.Road, Goregaon West, <br>Mumbai - 400104</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="f12">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Ven Analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/script.js"></script>
+
+  </body>
+</html>
