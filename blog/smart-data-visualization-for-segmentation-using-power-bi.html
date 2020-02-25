@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Smart Data Visualization for Segmentation using Power BI</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140896656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140896656-1');
+    </script>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container navbar-content">
+          <a class="navbar-brand" href="/"><img src="../images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+          <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="flaticon-menu"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../services">Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../blog">Insights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../about">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link f14 f300" href="../contact">Contact</a>
+              </li>
+              <li class="nav-item nav-cta">
+                <a class="nav-link btn btn-color" href="../contact">Request a Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Body content -->
+    <div class="breadcrumb-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav justify-content-end">
+              <li class="nav-item f14"><a class="nav-link" href="../blog">All Articles</a></li>
+              <li class="nav-item f14"><a class="nav-link" href="categories">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-blog-post">
+      <section class="section-post">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8">
+              <div class="content-wrap">
+                <div class="content-heading">
+                  <h1 class="text-orange">Smart Data Visualization for Segmentation using Power BI</h1>
+                </div>
+                <p dir="ltr">
+                    Communicating insights through data visualization is not easy, even with
+                    the best Business Intelligence Tools at our disposal. Many a times we find
+                    ourselves struggling to communicate clear-cut insights. One such use case
+                    is Customer or Market Segmentation problems.
+                </p>
+                <p dir="ltr">
+                    Scatter plots are often the go-to visuals in this case. However, they fail
+                    miserably if there is a dimension of time involved in the picture i.e. if
+                    we want to understand the reaction of our market/customer every time there
+                    is a change in a particular attribute. It often becomes impossible for us
+                    to generalize the outcome in a statement as we often end up looking at
+                    change between two fixed time periods.
+                </p>
+                <p dir="ltr">
+                    For Example: Effect of change in advertisement to market share, effect of
+                    change in distribution to sales, etc. can be done using scatter plot but we
+                    will be restricting ourselves to look at change in market share/sales
+                    between two static points in time – current year vs last year or current
+                    month vs last month and so on.
+                </p>
+                <p dir="ltr">
+                    This really does not help us generalize the effect of ad spends on market
+                    share and come up with a rule like “Every time Ad Spends are increased by
+                    10% the share for particular market increases by 20%” thus classifying it
+                    as a High, Medium, Low, No Responsive markets
+                </p>
+                <p dir="ltr">
+                    Keeping this in mind we have kind of created a template to deal with such
+                    classification problems. We will be using Power BI as our BI Tool.
+                </p>
+                <p dir="ltr">
+                    Side note: One can argue that such problems can also be solved using
+                    machine learning. True. However, many businesses cautiously prefer to use
+                    BI tools because of their easy adoption and interpretability. Though it is
+                    absolutely possible to create fully interpretable automated machine
+                    learning solutions but we won’t go there in this blog.
+                </p>
+                <p dir="ltr">
+                    BUSINESS PROBLEM: Understanding Investor Loyalty for an Asset Management
+                    Company
+                </p>
+                <p dir="ltr">
+                    Task is to classify its IFAs (Individual Financial Advisor) into 4
+                    quadrants:
+                </p>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Robust – Investor buys funds even when Sensex Falls
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Volatile – Investor sells funds as soon as Sensex Falls
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Opportunistic – Investor sells funds when Sensex Rises
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Safe – Investor buys funds only when Sensex Rises
+                        </p>
+                    </li>
+                </ul>
+                <p dir="ltr">
+                    Market fluctuation is a relative phenomenon, meaning even at a below
+                    average level the market could be considered to be doing better when
+                    compared to previous N-days. It is important that the period of comparison
+                    be controlled by the user of the report.
+                </p>
+                <p dir="ltr">
+                    Having said so let’s get to the solution
+                </p>
+                <br/>
+                <p dir="ltr">
+                    REPORT:
+                </p>
+                <p dir="ltr">
+                    <img
+                        src="https://lh5.googleusercontent.com/kCN3YWCaLsGbOFkyewJ7TVRUYo2WR4guP6zc0vX5gsrsZL1SMuibmOHaZ-PxD_c59r4L7BZaLHwS6QeEkhwOqRl1lU6nWYW0aTo1KPaAmqp9Uixx8XD1qchXov0jkdp9A9m_gONJQRwkJOwqog"
+                        width="635"
+                        height="360"
+                    />
+                </p>
+                <p dir="ltr">
+                    There are in total 6 sections to this report:
+                </p>
+                <ol type="A">
+                    <li dir="ltr">
+                        <p dir="ltr">Axis Filters:</p>
+                        <ol type="a">
+                            <li>
+                                <p dir="ltr">
+                                    Units Change %:
+                                </p>
+                                <p dir="ltr">Let’s us adjust number of bubbles on the Output Visual i.e. clutter or unclutter the visual</p>
+                            </li>
+                            <li dir="ltr">
+                                <p dir="ltr">
+                                    Sensex Change %:
+                                </p>
+                                <p dir="ltr">
+                                    Y-axis adjustment of the Output Visual and secondary axis adjustment for
+                                    Sensex Trend Chart
+                                </p>
+                            </li>
+                        </ol>
+                    </li>                    
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Interval Filter:
+                        </p>
+                        <p dir="ltr">
+                            When we talk about change, it’s always relative i.e. it’s always w.r.t last
+                            N days. Business users needed the flexibility to look at daily, weekly,
+                            bi-monthly, monthly or any arbitrary no. of days as change interval, which
+                            is what this filter provides.
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Investor Type:
+                        </p>
+                        <p dir="ltr">
+                            There are multiple investors types in case of a Mutual Funds. Direct, IFA,
+                            National, Regional, BND, Alternate. We are not going to go in details of
+                            each of them as the investor type that we are interested is the IFAs.
+                            Therefore, the filter selection – IFA Distributor
+                        </p>
+
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Sensex Trend:
+                        </p>
+                        <p dir="ltr">
+                            As mentioned earlier an IFA is categorized into any of the 4 categories
+                            based on his reactions to market fluctuations. This chart is where we are
+                            able to see the latter.
+                        </p>
+                        <p dir="ltr">
+                            The primary axis (line) depicts the Sensex while secondary axis shows the
+                            percentage change in Sensex at a given point base on the selected interval
+                            (B)
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Investor Selection:
+                        </p>
+                        <p dir="ltr">
+                            Selection filter to focus on any (one or many) IFA. IFAs are sorted
+                            descending by their corpus showing the biggest distributors at the top.
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            IFA Segmentation:
+                        </p>
+                        <p dir="ltr">
+                            The visual used is Dot Plot by MAQ Software.
+                        </p>
+                        <p dir="ltr">
+                            Y-axis: % change in Sensex (remember percentages are relative and hence
+                            based on the selection of the Interval Filter)
+                        </p>
+                        <p dir="ltr">
+                            X-axis: IFAs
+                        </p>
+                        <p dir="ltr">
+                            Bubble Size: % change in the number of units (either bought or sold)
+                        </p>
+                        <p dir="ltr">
+                            Bubble Color: Red – Sold, Green – Bought
+                        </p>
+                    </li>
+                </ol>
+                <br/>
+                <p dir="ltr">
+                    Results Interpretation:
+                </p>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Let’s interpret the visual with an instance. IFA 1226 shows a
+                            significant sell out of funds when the market is performing well
+                            therefore, he is an Opportunistic Investor.
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Let’s take another example – IFA 147. We can classify him as a
+                            Robust Investor because we can see a significant rise in his
+                            investment whenever there is a drop in market.
+                        </p>
+                    </li>
+                </ul>
+                <p dir="ltr">
+                    This kind of information is very useful for the sales team and marketing
+                    team as they would now know exactly know HOW and WHEN to target an IFA.
+                </p>
+                <p>
+                    This can be used as a Template for Segmentation Problems wherein, we have
+                    to classify elements like markets, customer, vendors, employees etc. based
+                    on some attributes, especially when one has to look at time-series change
+                    of an attribute and when the number of elements to be classified are too
+                    many.
+                </p>
+                <p dir="ltr">
+                    Link for the report -&gt; <a href="https://bit.ly/3a4MrrE">https://bit.ly/3a4MrrE</a>
+                </p>
+                <p dir="ltr">
+                    Please Note that the data used in the visualization is dummy data for
+                    obvious reasons
+                </p>
+                <div>
+                    <br/>
+                </div>
+              </div>
+              <div class="subscribe-box orange">
+                <h3 class="text-white text-center">Get access to proven analytical solutions</h3>
+                <form action="https://formspree.io/hello@venanalytics.io" method="POST" id="" novalidate="" />
+                  <div class="form-row justify-content-md-center">
+                    <div class="col-md-8">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your e-mail">
+                        <div class="input-group-append">
+                          <input type="button" class="btn btn-white-solid" value="Subscribe">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--/Body content -->
+
+    <footer class="footer black">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo"><img src="../images/ven-analytics-logo-white.svg" alt="Ven Analytics"></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 order-md-1 order-2">
+                <div class="footer-column quick-links">
+                  <p class="footer-heading f500">Quick links</p>
+                  <ul class="list-unstyled">
+                    <li><a href="/" class="f14 f300">Home</a></li>
+                    <li><a href="../services" class="f14 f300">Offerings</a></li>
+                    <li><a href="../blog" class="f14 f300">Insights</a></li>
+                    <li><a href="../about" class="f14 f300">Company</a></li>
+                    <li><a href="../contact" class="f14 f300">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-2 order-3">
+                <div class="footer-column social-links">
+                  <p class="footer-heading f500">Follow</p>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.linkedin.com/company/venanalytics-pvt-ltd/" class="f14 f300" target="_blank"><i class="flaticon-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-facebook"></i> Facebook</a></li>
+                    <li><a href="javascript:void(0);" class="f14 f300" target="_blank"><i class="flaticon-twitter"></i> Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 order-md-3 order-1">
+                <div class="footer-column contact-links">
+                  <p class="footer-heading f500">Get in touch</p>
+                  <ul class="list-unstyled">
+                    <li><a href="mailto:hello@venanalytics.io" class="f14 f300 email">hello@venanalytics.io</a></li>
+                    <li><a href="javascript:void(0)" class="f14 f300 email">701/A, Mangalya CHS, M.G.Road, Goregaon West, <br>Mumbai - 400104</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="f12">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Ven Analytics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/script.js"></script>
+
+  </body>
+</html>
